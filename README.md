@@ -37,7 +37,7 @@ In the collector lambda, using the yfinance module, I grabbed one full day’s w
 
 
 
-## [Analysis](https://github.com/JackJoeng/Streaming-Finance-Data-with-AWS-Lambda/blob/master/Analysis.ipynb)
+## [Analysis - Check it out ](https://github.com/JackJoeng/Streaming-Finance-Data-with-AWS-Lambda/blob/master/Analysis.ipynb)
 
 
 ***Jack Yang Copy Right 2020***
