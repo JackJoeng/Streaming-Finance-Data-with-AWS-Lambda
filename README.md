@@ -12,7 +12,7 @@ Lambda URL: https://pugc7ko1ba.execute-api.us-east-2.amazonaws.com/default/STA97
 - AWS Glue
 - AWS Athena
 
-**Infrastructure**
+## Infrastructure
 
 This project consists of three major infrastructure elements that work in tandem:
 - A lambda function that collects our data (DataCollector)
