@@ -24,24 +24,29 @@ import yfinance as yf
 def lambda_handler(event, context):
 
     stocks = ['FB','SHOP','BYND','NFLX','PINS','SQ','TTD','OKTA','SNAP','DDOG']
-    data = []
+    start_date = '2020-05-14'
+    end_date = '2020-05-15'
+    interval = '1m'
+    period = '1d'
 
     download = yf.download(
             tickers = ' '.join(stocks),
-            start = '2020-05-14',
-            end = '2020-05-15',
-            period = "1d",
-            interval = "1m",
+            start = start_date,
+            end = end_date,
+            period = period,
+            interval = interval,
             group_by = 'ticker',
             auto_adjust = True,
-            threads = True,
+            threads = True
         ) 
+
+    data = []
 
     for stock in stocks:
         for index, rows in download[stock].iterrows():
             data += [{
-                "high": rows.High, 
-                "low": rows.Low, 
+                "high": rows['High'], 
+                "low": rows['Low'], 
                 "ts": str(index), 
                 "name": stock
                 }]
