@@ -35,9 +35,7 @@ def lambda_handler(event, context):
             end = end_date,
             period = period,
             interval = interval,
-            group_by = 'ticker',
-            auto_adjust = True,
-            threads = True
+            group_by = 'ticker'
         ) 
 
     data = []
