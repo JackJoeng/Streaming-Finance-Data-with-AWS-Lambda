@@ -47,10 +47,15 @@ In the collector lambda, using the yfinance module ([documentation ](https://git
 
 ![Firehose](https://github.com/JackJoeng/Streaming-Finance-Data-with-AWS-Lambda/blob/master/assets/athena.png?raw=true)
 
-
-
 ## [Analysis - Check it out ](https://github.com/JackJoeng/Streaming-Finance-Data-with-AWS-Lambda/blob/master/Analysis.ipynb)
 https://github.com/JackJoeng/Streaming-Finance-Data-with-AWS-Lambda/blob/master/Analysis.ipynb
+
+
+### * Lambda Deployment Package
+
+In order to run lambda functions that also manage dependencies, a "deployment package" must be leveraged, basically a zip file containing your lambda code and all the dependencies it needs all packaged into a single artifact.
+
+This [repo](https://github.com/mottaquikarim/STA9760_simple_deployment_package) from Taq Karim provides a few tools that will help you manage your lambda functions and the dependencies.
 
 
 ***Jack Yang Copy Right 2020***
