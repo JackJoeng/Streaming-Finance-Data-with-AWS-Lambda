@@ -4,6 +4,14 @@ This project aims to provision Lambda functions to generate near real time finan
 
 Lambda URL: https://pugc7ko1ba.execute-api.us-east-2.amazonaws.com/default/STA9760-P3-DataCollector
 
+## Technologies
+
+- AWS Lambda
+- AWS Kinesis
+- AWS S3
+- AWS Glue
+- AWS Athena
+
 **Infrastructure**
 
 This project consists of three major infrastructure elements that work in tandem:
@@ -35,9 +43,14 @@ In the collector lambda, using the yfinance module, I grabbed one full day’s w
 
 ![Firehose](https://github.com/JackJoeng/Streaming-Finance-Data-with-AWS-Lambda/blob/master/assets/firehose.png?raw=true)
 
+## Athena Ad-Hoc Queries
+
+![Firehose](https://github.com/JackJoeng/Streaming-Finance-Data-with-AWS-Lambda/blob/master/assets/athena.png?raw=true)
+
 
 
 ## [Analysis - Check it out ](https://github.com/JackJoeng/Streaming-Finance-Data-with-AWS-Lambda/blob/master/Analysis.ipynb)
+https://github.com/JackJoeng/Streaming-Finance-Data-with-AWS-Lambda/blob/master/Analysis.ipynb
 
 
 ***Jack Yang Copy Right 2020***
