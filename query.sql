@@ -1,4 +1,4 @@
-SELECT DISTINCT a.Company, a.Highest_Hourly_Price, CAST(ts AS TIMESTAMP) AS datetime, a.hour
+SELECT DISTINCT a.Company, a.Highest_Hourly_Price, ts AS datetime, a.hour
 FROM (
     SELECT name AS Company, (EXTRACT(HOUR FROM (CAST(ts AS TIMESTAMP))) - 4) AS hour, max(high) as Highest_Hourly_Price
     FROM finance_data_jack
