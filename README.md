@@ -22,7 +22,7 @@ This project consists of three major infrastructure elements that work in tandem
 ![Infrastructure](https://github.com/JackJoeng/Streaming-Finance-Data-with-AWS-Lambda/blob/master/assets/infrastructure.png?raw=true)
 
 
-In the collector lambda, using the yfinance module, I grabbed one full day’s worth of stock HIGH and LOW prices for each company listed above on Thursday, May 14th 2020, at an one minute interval. Note that by “full day” we mean one day of stock trading, which is not 24 hours.
+In the collector lambda, using the yfinance module ([documentation](https://github.com/ranaroussi/yfinance))here, I grabbed one full day’s worth of stock HIGH and LOW prices for each company listed above on Thursday, May 14th 2020, at an one minute interval. Note that by “full day” we mean one day of stock trading, which is not 24 hours.
 
 - Facebook (FB)
 - Shopify (SHOP)
